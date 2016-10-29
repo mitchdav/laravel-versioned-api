@@ -1,15 +1,22 @@
 {
-  "name": "laravel/laravel",
-  "description": "The Laravel Framework.",
+  "name": "mitchdav/laravel-versioned-api",
+  "description": "A basic starter skeleton for working with versioned APIs using Laravel 5.3, Doctrine 2, Dingo 1.0 and JWT 0.5.",
   "keywords": [
     "framework",
-    "laravel"
+    "laravel",
+    "doctrine",
+    "dingo",
+    "jwt",
+    "skeleton",
+    "rest",
+    "api",
+    "versioned"
   ],
   "license": "MIT",
   "type": "project",
   "require": {
     "php": ">=5.5.9",
-    "laravel/framework": "5.2.*",
+    "laravel/framework": "5.3.*",
     "laravel-doctrine/orm": "1.2.*",
     "dingo/api": "1.0.x@dev",
     "tymon/jwt-auth": "0.5.*"
@@ -42,7 +49,8 @@
       "php -r \"copy('.env.example', '.env');\""
     ],
     "post-create-project-cmd": [
-      "php artisan key:generate"
+      "php artisan key:generate",
+      "php artisan jwt:generate"
     ],
     "post-install-cmd": [
       "Illuminate\\Foundation\\ComposerScripts::postInstall",
