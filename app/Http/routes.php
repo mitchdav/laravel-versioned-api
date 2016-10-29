@@ -28,7 +28,7 @@ $api->version(
 	'V1',
 	[
 		'middleware' => 'api.auth',
-		'provider'   => 'V1'
+		'provider'   => 'V1',
 	],
 	function () use ($api)
 	{
@@ -50,7 +50,7 @@ $api->version(
 	'V2',
 	[
 		'middleware' => 'api.auth',
-		'provider'   => 'V2'
+		'provider'   => 'V2',
 	],
 	function () use ($api)
 	{
@@ -72,7 +72,7 @@ $api->version(
 	'V3',
 	[
 		'middleware' => 'api.auth',
-		'provider'   => 'V3'
+		'provider'   => 'V3',
 	],
 	function () use ($api)
 	{
