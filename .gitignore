@@ -1,0 +1,8 @@
+/.idea
+/vendor
+/public/storage
+/storage/proxies/*
+Homestead.yaml
+Homestead.json
+.env
+Thumbs.db
