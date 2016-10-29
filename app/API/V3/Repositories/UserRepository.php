@@ -6,5 +6,5 @@ use App\Repositories\Repository;
 
 class UserRepository extends Repository
 {
-	
+	protected $entity = \App\API\V3\Entities\User::class;
 }

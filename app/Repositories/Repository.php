@@ -4,13 +4,22 @@ namespace App\Repositories;
 
 use Doctrine\ORM\EntityRepository;
 use Doctrine\ORM\EntityManager;
-use Doctrine\ORM\Mapping\ClassMetadata;
 
 class Repository extends EntityRepository
 {
-	public function __construct(EntityManager $em, ClassMetadata $class)
+	protected $entity;
+	
+	public function __construct()
 	{
-		parent::__construct($em, $class);
+		if($this->entity == NULL)
+		{
+			throw new \Exception('All repositories must specify which entity they are providing a repository for.');
+		}
+		
+		/** @var EntityManager $em */
+		$em = app('em');
+		
+		parent::__construct($em, $em->getClassMetadata($this->entity));
 		
 		$this->excludeDeleted();
 	}
