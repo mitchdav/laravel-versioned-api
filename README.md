@@ -3,7 +3,7 @@
 This is a skeleton for the [Laravel](https://laravel.com/) framework which takes care of setting up a new project with [Doctrine](http://www.laraveldoctrine.org/), [Dingo](https://github.com/dingo/api) and [JWT](https://github.com/tymondesigns/jwt-auth). After installation you will have a working REST API which responds to requests for 3 different versions of the same API, and has authentication already built-in.
 
 ## Requirements
-* PHP >= 5.5.9
+* PHP >= 5.6.4
 * A database (MySQL, or any others supported by Laravel and Doctrine)
 * [Composer](https://getcomposer.org/).
 
