@@ -1,6 +1,6 @@
 {
   "name": "mitchdav/laravel-versioned-api",
-  "description": "A basic starter skeleton for working with versioned APIs using Laravel 5.2, Doctrine 2, Dingo 1.0 and JWT 0.5.",
+  "description": "A basic starter skeleton for working with versioned APIs using Laravel 5.3, Doctrine 2, Dingo 1.0 and JWT 0.5.",
   "keywords": [
     "framework",
     "laravel",
@@ -21,8 +21,8 @@
     }
   ],
   "require": {
-    "php": ">=5.5.9",
-    "laravel/framework": "5.2.*",
+    "php": ">=5.6.4",
+    "laravel/framework": "5.3.*",
     "laravel-doctrine/orm": "1.2.*",
     "dingo/api": "1.0.x@dev",
     "tymon/jwt-auth": "0.5.*"
